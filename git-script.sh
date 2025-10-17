@@ -21,3 +21,23 @@ git remote -v
 # push to confirm pushing to remote repo works
 
 git push -u origin main
+
+# Create a new branch for each developer
+
+# first check existing branches
+git branch 
+
+# create branches
+
+git branch feature/login
+git branch feature/dashboard
+git branch feature/api
+
+
+# verify the three branches created successfully
+git branch
+
+# push the three branches to remote repo to make three branches on the remote repo to mirror the branches on local repository
+git push -u origin feature/login
+git push -u origin feature/dashboard
+git push -u origin feature/api
