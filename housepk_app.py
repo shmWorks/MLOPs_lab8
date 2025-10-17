@@ -1,4 +1,3 @@
-# app.py
 import os
 import joblib
 import numpy as np
@@ -40,6 +39,8 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 @app.route("/", methods=["GET"])
 def index():
+    print("Login feature: Rendering home page")  # Added for login feature
+    # Login-specific template logic
     return render_template("index.html", feature_meta=feature_meta)
 
 @app.route("/predict", methods=["POST"])
