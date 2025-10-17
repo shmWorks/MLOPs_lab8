@@ -4,3 +4,4 @@ pandas
 dvc
 joblib 
 pyyaml
+flask
